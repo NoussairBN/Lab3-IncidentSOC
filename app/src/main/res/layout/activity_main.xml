@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚨 SIGNALEMENT D'INCIDENT (SOC)"
+            android:textColor="#FF4444"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Agent Signalant" android:textColor="#AAAAAA" />
+        <EditText
+            android:id="@+id/input_agent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: N. Bouanani"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email Sécurité" android:textColor="#AAAAAA" />
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: sec-ops@entreprise.com"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type de Menace" android:textColor="#AAAAAA" />
+        <EditText
+            android:id="@+id/input_menace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: Attaque DDoS, Ransomware..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IP Source Suspecte" android:textColor="#AAAAAA" />
+        <EditText
+            android:id="@+id/input_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 192.168.1.50"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:inputType="textUri"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Serveur Cible" android:textColor="#AAAAAA" />
+        <EditText
+            android:id="@+id/input_serveur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: Prod-Database-01"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:inputType="text"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btn_generer_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Générer le Ticket d'Incident"
+            android:backgroundTint="#FF4444"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
